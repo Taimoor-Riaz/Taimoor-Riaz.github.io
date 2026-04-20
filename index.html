@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- ============================================================
+    UPDATE: Change the title to your name
+  ============================================================ -->
+  <title>Your Name — Unity Game Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts: Syne (display) + DM Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ── NAVBAR ─────────────────────────────────────────────── -->
+  <header class="navbar">
+    <!-- UPDATE: Replace with your name / brand -->
+    <div class="nav-logo">YN<span class="dot">.</span></div>
+    <nav class="nav-links">
+      <a href="#summary"   class="nav-link active" data-tab="summary">Summary</a>
+      <a href="#skills"    class="nav-link"         data-tab="skills">Skills</a>
+      <a href="#projects"  class="nav-link"         data-tab="projects">Projects</a>
+      <a href="#experience"class="nav-link"         data-tab="experience">Experience</a>
+    </nav>
+    <button class="nav-contact-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+      Contact
+    </button>
+  </header>
+
+  <!-- ── MAIN CONTENT ──────────────────────────────────────── -->
+  <main>
+
+    <!-- ══ SUMMARY TAB ══════════════════════════════════════ -->
+    <section id="summary" class="tab-section active">
+
+      <div class="hero">
+        <div class="hero-text">
+          <p class="hero-eyebrow">Unity Game Developer</p>
+          <!-- UPDATE: Your name -->
+          <h1 class="hero-name">Your<br/><span class="accent">Name</span></h1>
+          <!-- UPDATE: Your short tagline (1 line) -->
+          <p class="hero-tagline">Building immersive games &amp; robust backend systems.</p>
+          <!-- UPDATE: Your bio (2–4 sentences) -->
+          <p class="hero-bio">
+            I'm a Unity game developer with expertise spanning the full development stack —
+            from crafting engaging gameplay and real-time multiplayer systems in Unity,
+            to designing scalable server APIs and databases that power them.
+            I bring games from concept to deployment.
+          </p>
+          <div class="hero-cta">
+            <!-- UPDATE: Link to your resume PDF -->
+            <a href="resume.pdf" class="btn-primary" target="_blank">Download CV</a>
+            <a href="#projects" class="btn-ghost" data-scroll-tab="projects">View Projects ↓</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <!-- UPDATE: Replace with your photo. Keep class="avatar-img" -->
+          <!-- Option A: use an <img> tag -->
+          <!-- <img src="photo.jpg" alt="Your Name" class="avatar-img" /> -->
+          <!-- Option B: placeholder shown below (remove when you add photo) -->
+          <div class="avatar-placeholder">
+            <!-- UPDATE: Your initials -->
+            <span>YN</span>
+          </div>
+          <div class="hero-badge top-right">Unity3D</div>
+          <div class="hero-badge bottom-left">Multiplayer</div>
+        </div>
+      </div>
+
+      <!-- Stats row -->
+      <div class="stats-row">
+        <!-- UPDATE: Your real numbers -->
+        <div class="stat-card">
+          <span class="stat-num">3<span class="plus">+</span></span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">12<span class="plus">+</span></span>
+          <span class="stat-label">Games Shipped</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">5<span class="plus">+</span></span>
+          <span class="stat-label">Multiplayer Projects</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">8<span class="plus">+</span></span>
+          <span class="stat-label">Backend APIs Built</span>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ══ SKILLS TAB ════════════════════════════════════════ -->
+    <section id="skills" class="tab-section">
+
+      <div class="section-header">
+        <h2>Skills</h2>
+        <p class="section-sub">Technologies &amp; tools I work with daily.</p>
+      </div>
+
+      <div class="skills-grid">
+
+        <!-- ── Skill Category: Game Development -->
+        <div class="skill-category">
+          <h3 class="cat-title"><span class="cat-icon">🎮</span> Game Development</h3>
+          <div class="skill-bars">
+            <!-- UPDATE: Adjust skill names and percent (0–100) -->
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>Unity3D</span><span>95%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" style="--pct:95%"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>C# / .NET</span><span>90%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" style="--pct:90%"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>Shader / HLSL</span><span>70%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" style="--pct:70%"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>Unity UI / uGUI</span><span>85%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" style="--pct:85%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Skill Category: Multiplayer / Networking -->
+        <div class="skill-category">
+          <h3 class="cat-title"><span class="cat-icon">🌐</span> Multiplayer &amp; Networking</h3>
+          <div class="skill-bars">
+            <!-- UPDATE -->
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>Photon PUN / Fusion</span><span>85%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" style="--pct:85%"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>Mirror / Netcode</span><span>80%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" style="--pct:80%"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>WebSockets</span><span>75%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" style="--pct:75%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Skill Category: Backend / Server -->
+        <div class="skill-category">
+          <h3 class="cat-title"><span class="cat-icon">⚙️</span> Backend &amp; Server</h3>
+          <div class="skill-bars">
+            <!-- UPDATE -->
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>Node.js / Express</span><span>80%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" style="--pct:80%"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>REST API Design</span><span>85%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" style="--pct:85%"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>Firebase / PlayFab</span><span>80%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" style="--pct:80%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Skill Category: Database -->
+        <div class="skill-category">
+          <h3 class="cat-title"><span class="cat-icon">🗄️</span> Database</h3>
+          <div class="skill-bars">
+            <!-- UPDATE -->
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>MongoDB</span><span>80%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" style="--pct:80%"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>MySQL / PostgreSQL</span><span>70%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" style="--pct:70%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Skill Tags row -->
+        <div class="skill-category skill-tags-card">
+          <h3 class="cat-title"><span class="cat-icon">🛠</span> Tools &amp; Other</h3>
+          <div class="tags-list">
+            <!-- UPDATE: Add/remove tags freely -->
+            <span class="tag">Git / GitHub</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Linux / VPS</span>
+            <span class="tag">Blender (basic)</span>
+            <span class="tag">Addressables</span>
+            <span class="tag">CI/CD</span>
+            <span class="tag">Agile / Scrum</span>
+            <span class="tag">Jira</span>
+            <span class="tag">Postman</span>
+            <span class="tag">Unity Cloud Build</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══ PROJECTS TAB ══════════════════════════════════════ -->
+    <section id="projects" class="tab-section">
+
+      <div class="section-header">
+        <h2>Projects</h2>
+        <p class="section-sub">Selected work — games, tools &amp; systems.</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- ── Project Card 1 -->
+        <!-- UPDATE: All fields below -->
+        <div class="project-card featured">
+          <div class="project-card-top">
+            <span class="project-type">Multiplayer Game</span>
+            <span class="project-year">2024</span>
+          </div>
+          <h3 class="project-title">Project Alpha</h3>
+          <p class="project-desc">
+            A real-time multiplayer battle arena built in Unity with Photon Fusion.
+            Features matchmaking, leaderboards via REST API, and MongoDB persistence.
+          </p>
+          <div class="project-tags">
+            <span class="tag sm">Unity</span>
+            <span class="tag sm">Photon Fusion</span>
+            <span class="tag sm">Node.js</span>
+            <span class="tag sm">MongoDB</span>
+          </div>
+          <div class="project-links">
+            <!-- UPDATE: Replace # with real URLs. Remove a tag if not applicable -->
+            <a href="#" class="proj-link" target="_blank">GitHub ↗</a>
+            <a href="#" class="proj-link live" target="_blank">Live Demo ↗</a>
+          </div>
+        </div>
+
+        <!-- ── Project Card 2 -->
+        <div class="project-card">
+          <div class="project-card-top">
+            <span class="project-type">Mobile Game</span>
+            <span class="project-year">2023</span>
+          </div>
+          <h3 class="project-title">Project Beta</h3>
+          <p class="project-desc">
+            A hyper-casual mobile puzzle game with Firebase backend for auth,
+            cloud saves, and in-app analytics.
+          </p>
+          <div class="project-tags">
+            <span class="tag sm">Unity</span>
+            <span class="tag sm">Firebase</span>
+            <span class="tag sm">C#</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="proj-link" target="_blank">GitHub ↗</a>
+            <a href="#" class="proj-link live" target="_blank">Play Store ↗</a>
+          </div>
+        </div>
+
+        <!-- ── Project Card 3 -->
+        <div class="project-card">
+          <div class="project-card-top">
+            <span class="project-type">Backend System</span>
+            <span class="project-year">2023</span>
+          </div>
+          <h3 class="project-title">Game Server API</h3>
+          <p class="project-desc">
+            Scalable REST API for game state management, player profiles, inventory
+            and economy. Deployed on VPS with Docker and auto-scaling.
+          </p>
+          <div class="project-tags">
+            <span class="tag sm">Node.js</span>
+            <span class="tag sm">Docker</span>
+            <span class="tag sm">PostgreSQL</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="proj-link" target="_blank">GitHub ↗</a>
+          </div>
+        </div>
+
+        <!-- ── Project Card 4 -->
+        <div class="project-card">
+          <div class="project-card-top">
+            <span class="project-type">PC Game</span>
+            <span class="project-year">2022</span>
+          </div>
+          <h3 class="project-title">Project Delta</h3>
+          <p class="project-desc">
+            Single-player RPG with dynamic AI enemies, save system, and custom
+            inventory UI built entirely in Unity.
+          </p>
+          <div class="project-tags">
+            <span class="tag sm">Unity</span>
+            <span class="tag sm">C#</span>
+            <span class="tag sm">SQLite</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="proj-link" target="_blank">GitHub ↗</a>
+            <a href="#" class="proj-link live" target="_blank">itch.io ↗</a>
+          </div>
+        </div>
+
+        <!-- ── ADD MORE: Copy a project-card block above to add more projects -->
+
+      </div>
+    </section>
+
+    <!-- ══ EXPERIENCE TAB ════════════════════════════════════ -->
+    <section id="experience" class="tab-section">
+
+      <div class="section-header">
+        <h2>Experience</h2>
+        <p class="section-sub">My professional journey so far.</p>
+      </div>
+
+      <div class="timeline">
+
+        <!-- ── Timeline Item 1 (most recent) -->
+        <!-- UPDATE: All fields -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Unity Game Developer</h3>
+                <span class="timeline-company">Company / Studio Name</span>
+              </div>
+              <span class="timeline-date">Jan 2023 — Present</span>
+            </div>
+            <ul class="timeline-bullets">
+              <!-- UPDATE: Your real responsibilities / achievements -->
+              <li>Developed and shipped 3 multiplayer games using Unity and Photon Fusion.</li>
+              <li>Designed and maintained REST APIs in Node.js connecting Unity clients to MongoDB.</li>
+              <li>Reduced server latency by 40% through query optimization and caching strategies.</li>
+              <li>Led backend architecture decisions for a live-ops game with 10k+ DAU.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag sm">Unity</span>
+              <span class="tag sm">Photon</span>
+              <span class="tag sm">Node.js</span>
+              <span class="tag sm">MongoDB</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Timeline Item 2 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Junior Game Developer</h3>
+                <span class="timeline-company">Previous Company / Freelance</span>
+              </div>
+              <span class="timeline-date">Jun 2021 — Dec 2022</span>
+            </div>
+            <ul class="timeline-bullets">
+              <!-- UPDATE -->
+              <li>Built gameplay systems, UI, and audio managers for mobile games.</li>
+              <li>Integrated Firebase for authentication, cloud saves, and analytics.</li>
+              <li>Collaborated with designers to implement pixel-perfect UI components.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag sm">Unity</span>
+              <span class="tag sm">Firebase</span>
+              <span class="tag sm">C#</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Timeline Item 3 (education / older) -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <!-- UPDATE: Degree / course name -->
+                <h3 class="timeline-role">BS Computer Science</h3>
+                <!-- UPDATE: University name -->
+                <span class="timeline-company">Your University</span>
+              </div>
+              <span class="timeline-date">2017 — 2021</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Focused on software engineering, data structures, and systems programming.</li>
+              <li>Final year project: Multiplayer strategy game with custom server-side logic.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ── ADD MORE: Copy a timeline-item block above for more experience -->
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── CONTACT FOOTER ────────────────────────────────────── -->
+  <footer id="contact" class="contact-footer">
+    <div class="contact-inner">
+      <h2>Let's work together.</h2>
+      <!-- UPDATE: Your email -->
+      <a href="mailto:your@email.com" class="contact-email">your@email.com</a>
+      <div class="contact-links">
+        <!-- UPDATE: Replace # with real URLs. Remove any you don't use. -->
+        <a href="#" target="_blank" class="contact-icon-link" title="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+        </a>
+        <a href="#" target="_blank" class="contact-icon-link" title="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="#" target="_blank" class="contact-icon-link" title="itch.io">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M3.13 1.338C2.08 1.96.02 4.328 0 4.95v1.03c0 1.303 1.22 2.45 2.325 2.45 1.326 0 2.436-1.102 2.436-2.41 0 1.308 1.07 2.41 2.396 2.41 1.325 0 2.354-1.102 2.354-2.41 0 1.308 1.113 2.41 2.44 2.41h.024c1.327 0 2.44-1.102 2.44-2.41 0 1.308 1.028 2.41 2.353 2.41 1.326 0 2.396-1.102 2.396-2.41 0 1.308 1.11 2.41 2.435 2.41C23.78 8.43 25 7.283 25 5.98V4.95c-.02-.622-2.082-2.99-3.13-3.612C21.87 1.338 3.13 1.338 3.13 1.338zM8.5 9.5v11h7V9.5H8.5z"/></svg>
+        </a>
+      </div>
+      <p class="footer-copy">
+        <!-- UPDATE: Your name -->
+        © 2024 Your Name. Built with HTML, CSS &amp; JS.
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
