@@ -349,8 +349,21 @@ main {
 .skill-bar-label {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-size: 0.88rem;
   color: var(--text-muted);
+}
+
+.skill-name-with-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.skill-name-icon {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
 }
 
 .skill-bar-track {
