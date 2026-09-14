@@ -75,7 +75,7 @@
   // ── Handle initial hash ────────────────────────────────────
   // Allows direct linking: portfolio.html#projects
   const hash = window.location.hash.replace('#', '');
-  const validTabs = ['summary', 'skills', 'projects', 'experience'];
+  const validTabs = ['summary', 'skills', 'projects', 'showreel', 'experience'];
   if (hash && validTabs.includes(hash)) {
     activateTab(hash);
   } else {
