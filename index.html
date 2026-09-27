@@ -2,560 +2,335 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- ============================================================
-    UPDATE: Change the title to your name
-  ============================================================ -->
-  <title>Your Name — Unity Game Developer</title>
-  <link rel="stylesheet" href="style.css" />
-  <!-- Google Fonts: Syne (display) + DM Sans (body) -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Taimoor Riaz — Senior Unity Game Developer</title>
+  <meta name="description" content="Senior Unity game developer with 7+ years of experience building multiplayer, mobile and PC games. Available for freelance projects." />
+  <meta property="og:title" content="Taimoor Riaz — Senior Unity Game Developer" />
+  <meta property="og:description" content="Multiplayer, mobile and PC games built in Unity, from first prototype to store launch." />
+  <meta property="og:image" content="https://taimoor-riaz.github.io/images/profile/profileimage.jpg" />
+  <meta property="og:url" content="https://taimoor-riaz.github.io/" />
+  <meta name="theme-color" content="#0f1628" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Unbounded:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <a class="skip" href="#main">Skip to content</a>
 
-  <!-- ── NAVBAR ─────────────────────────────────────────────── -->
-  <header class="navbar">
-    <!-- UPDATE: Replace with your name / brand -->
-    <div class="nav-logo">Taimoor Riaz<span class="dot">.</span></div>
-    <nav class="nav-links">
-      <a href="#summary"   class="nav-link active" data-tab="summary">Summary</a>
-      <a href="#skills"    class="nav-link"         data-tab="skills">Skills</a>
-      <a href="#projects"  class="nav-link"         data-tab="projects">Projects</a>
-      <a href="#experience"class="nav-link"         data-tab="experience">Experience</a>
-    </nav>
-    <button class="nav-contact-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
-      Contact
-    </button>
+  <header class="nav">
+    <div class="wrap nav__inner">
+      <a class="brand" href="#top">Taimoor Riaz</a>
+      <nav aria-label="Main">
+        <button class="nav__toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a class="btn btn--gold btn--small" href="#contact">Hire me</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <!-- ── MAIN CONTENT ──────────────────────────────────────── -->
-  <main>
-
-    <!-- ══ SUMMARY TAB ══════════════════════════════════════ -->
-    <section id="summary" class="tab-section active">
-
-      <div class="hero">
-        <div class="hero-text">
-          <p class="hero-eyebrow">Unity Game Developer</p>
-          <!-- UPDATE: Your name -->
-          <h1 class="hero-name">Taimoor<br/><span class="accent">Riaz</span></h1>
-          <!-- UPDATE: Your short tagline (1 line) -->
-          <p class="hero-tagline">Building immersive games &amp; robust backend systems.</p>
-          <!-- UPDATE: Your bio (2–4 sentences) -->
-          <p class="hero-bio">
-            I'm a Unity game developer with expertise spanning the full development stack —
-            from crafting engaging gameplay and real-time multiplayer systems in Unity,
-            to designing scalable server APIs and databases that power them.
-            I bring games from concept to deployment.
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="wrap hero__grid">
+        <div>
+          <p class="status">
+            <img src="images/profile/profileimage.jpg" alt="Taimoor Riaz" width="44" height="44" />
+            <span class="status__dot" aria-hidden="true"></span>
+            Available for freelance projects
           </p>
-          <div class="hero-cta">
-            <!-- UPDATE: Link to your resume PDF -->
-            <a href="Taimoor%20Resume_Europass.pdf" class="btn-primary" target="_blank" rel="noopener noreferrer">Download CV</a>
-            <a href="#projects" class="btn-ghost" data-scroll-tab="projects">View Projects ↓</a>
+          <h1>Taimoor Riaz</h1>
+          <p class="hero__lede">Senior Unity game developer. I build multiplayer, mobile and PC games from the first prototype to store launch.</p>
+          <div class="hero__actions">
+            <a class="btn btn--gold" href="mailto:mughaltaimoor298@gmail.com?subject=Game%20project%20enquiry">Email me about your project</a>
+            <a class="btn btn--line" href="#work">See my work</a>
+            <a class="btn btn--line" href="Taimoor%20Resume_Europass.pdf" download>Download CV</a>
           </div>
+          <ul class="facts">
+            <li><strong>7+ years</strong>making games</li>
+            <li><strong>50+ games</strong>shipped</li>
+            <li><strong>20+</strong>multiplayer projects</li>
+            <li><strong>50K+</strong>downloads on one title</li>
+          </ul>
         </div>
 
-        <div class="hero-visual">
-          <img src="images/profile/profileimage.jpg" alt="Your Name" class="avatar-img" />
-          <div class="hero-badge top-right">Unity</div>
-          <div class="hero-badge bottom-left">Programming</div>
-        </div>
-      </div>
-
-      <!-- Stats row -->
-      <div class="stats-row">
-        <!-- UPDATE: Your real numbers -->
-        <div class="stat-card">
-          <span class="stat-num">4<span class="plus">+</span></span>
-          <span class="stat-label">Years Experience</span>
-        </div>
-        <div class="stat-card">
-          <span class="stat-num">50<span class="plus">+</span></span>
-          <span class="stat-label">Games Shipped</span>
-        </div>
-        <div class="stat-card">
-          <span class="stat-num">20<span class="plus">+</span></span>
-          <span class="stat-label">Multiplayer Projects</span>
-        </div>
-        <div class="stat-card">
-          <span class="stat-num">8<span class="plus">+</span></span>
-          <span class="stat-label">Server-Side Projects</span>
-        </div>
-      </div>
-
-    </section>
-
-    <!-- ══ SKILLS TAB ════════════════════════════════════════ -->
-    <section id="skills" class="tab-section">
-
-      <div class="section-header">
-        <h2>Skills</h2>
-        <p class="section-sub">Technologies &amp; tools I work with daily.</p>
-      </div>
-
-      <div class="skills-grid">
-
-        <!-- ── Skill Category: Game Development -->
-        <div class="skill-category">
-          <h3 class="cat-title"><span class="cat-icon">🎮</span> Game Development</h3>
-          <div class="skill-bars">
-            <!-- UPDATE: Adjust skill names and percent (0–100) -->
-            <div class="skill-bar-item">
-              <div class="skill-bar-label"><span>Unity3D</span><span>95%</span></div>
-              <div class="skill-bar-track"><div class="skill-bar-fill" style="--pct:95%"></div></div>
-            </div>
-            <div class="skill-bar-item">
-              <div class="skill-bar-label"><span>C# / .NET</span><span>90%</span></div>
-              <div class="skill-bar-track"><div class="skill-bar-fill" style="--pct:90%"></div></div>
-            </div>
-            <div class="skill-bar-item">
-              <div class="skill-bar-label"><span>Shader / HLSL</span><span>70%</span></div>
-              <div class="skill-bar-track"><div class="skill-bar-fill" style="--pct:70%"></div></div>
-            </div>
-            <div class="skill-bar-item">
-              <div class="skill-bar-label"><span>Unity UI / uGUI</span><span>85%</span></div>
-              <div class="skill-bar-track"><div class="skill-bar-fill" style="--pct:85%"></div></div>
-            </div>
+        <div class="viewport">
+          <div class="viewport__frame">
+            <button class="reel" data-video="8tkrPeMQgKI" aria-label="Play my game development showreel">
+              <img src="https://i.ytimg.com/vi/8tkrPeMQgKI/hqdefault.jpg" alt="" loading="eager" />
+              <span class="reel__play"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 1.5v13l11-6.5z" fill="currentColor"/></svg>Play showreel</span>
+            </button>
           </div>
+          <div class="viewport__hud"><span><b>Showreel 2026</b></span><span>Multiplayer, mobile and PC work</span></div>
         </div>
-
-        <!-- ── Skill Category: Multiplayer / Networking -->
-        <div class="skill-category">
-          <h3 class="cat-title"><span class="cat-icon">🌐</span> Multiplayer &amp; Networking</h3>
-          <div class="skill-bars">
-            <!-- UPDATE -->
-            <div class="skill-bar-item">
-              <div class="skill-bar-label"><span>Photon PUN / Fusion</span><span>85%</span></div>
-              <div class="skill-bar-track"><div class="skill-bar-fill" style="--pct:85%"></div></div>
-            </div>
-            <div class="skill-bar-item">
-              <div class="skill-bar-label"><span>Mirror / Netcode</span><span>50%</span></div>
-              <div class="skill-bar-track"><div class="skill-bar-fill" style="--pct:80%"></div></div>
-            </div>
-            <div class="skill-bar-item">
-              <div class="skill-bar-label"><span>WebSockets</span><span>50%</span></div>
-              <div class="skill-bar-track"><div class="skill-bar-fill" style="--pct:75%"></div></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- ── Skill Category: Backend / Server -->
-        <div class="skill-category">
-          <h3 class="cat-title"><span class="cat-icon">⚙️</span> Backend &amp; Server</h3>
-          <div class="skill-bars">
-            <!-- UPDATE -->
-            <div class="skill-bar-item">
-              <div class="skill-bar-label"><span>REST API Design</span><span>75%</span></div>
-              <div class="skill-bar-track"><div class="skill-bar-fill" style="--pct:85%"></div></div>
-            </div>
-            <div class="skill-bar-item">
-              <div class="skill-bar-label"><span>Firebase / PlayFab</span><span>90%</span></div>
-              <div class="skill-bar-track"><div class="skill-bar-fill" style="--pct:80%"></div></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- ── Skill Category: Database -->
-        <div class="skill-category">
-          <h3 class="cat-title"><span class="cat-icon">🗄️</span> Database</h3>
-          <div class="skill-bars">
-            <!-- UPDATE -->
-            <div class="skill-bar-item">
-              <div class="skill-bar-label"><span>Firebase</span><span>90%</span></div>
-              <div class="skill-bar-track"><div class="skill-bar-fill" style="--pct:80%"></div></div>
-            </div>
-            <div class="skill-bar-item">
-              <div class="skill-bar-label"><span>MongoDB</span><span>70%</span></div>
-              <div class="skill-bar-track"><div class="skill-bar-fill" style="--pct:80%"></div></div>
-            </div>
-            <div class="skill-bar-item">
-              <div class="skill-bar-label"><span>MySQL / PostgreSQL</span><span>80%</span></div>
-              <div class="skill-bar-track"><div class="skill-bar-fill" style="--pct:70%"></div></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- ── Skill Tags row -->
-        <div class="skill-category skill-tags-card">
-          <h3 class="cat-title"><span class="cat-icon">🛠</span> Tools &amp; Other</h3>
-          <div class="tags-list">
-            <!-- UPDATE: Add/remove tags freely -->
-            <span class="tag">Git / GitHub</span>
-            <span class="tag">Blender (basic)</span>
-            <span class="tag">Autodesk Maya (Intermediate)</span>
-            <span class="tag">Adobe Photoshop (Basic)</span>
-            <span class="tag">Google Analytics</span>
-            <span class="tag">Google Ads</span>
-            <span class="tag">Addressables</span>
-            <span class="tag">CI/CD</span>
-            <span class="tag">Jira</span>
-            <span class="tag">Postman</span>
-            <span class="tag">Unity Cloud Build</span>
-          </div>
-        </div>
-
       </div>
     </section>
 
-    <!-- ══ PROJECTS TAB ══════════════════════════════════════ -->
-    <section id="projects" class="tab-section">
-
-      <div class="section-header">
-        <h2>Projects</h2>
-        <p class="section-sub">Selected work — games, tools &amp; systems.</p>
-      </div>
-
-      <div class="projects-grid">
-
-        <!-- ── Project Card 1 -->
-        <!-- UPDATE: All fields below -->
-        <div class="project-card featured">
-          <div class="project-card-top">
-            <span class="project-type">Kiosk Application</span>
-            <span class="project-year">2026</span>
-          </div>
-          <h3 class="project-title">Elm Kiosk Application</h3>
-          <p class="project-desc">
-            A Kiosk Application for Elm. IT is a software that allows the user to get answer to their question
-            from the 3d character. The question is send to the server which use LLm to get answer and then that answer is played and the character lipsync according to that answer.
-          </p>
-          <div class="project-tags">
-            <span class="tag sm">Unity</span>
-            <span class="tag sm">websockets</span>
-            <span class="tag sm">Salsa LIPSync</span>
-          </div>
-          <div class="project-links">
-            <!-- UPDATE: Replace # with real URLs. Remove a tag if not applicable -->
-            <a href="#" class="proj-link" target="_blank">GitHub ↗</a>
-            <a href="#" class="proj-link live" target="_blank">Live Demo ↗</a>
+    <section class="section" id="services">
+      <div class="wrap">
+        <div class="section__head">
+          <div>
+            <h2>What I can build for you</h2>
+            <p class="section__intro">Whether you need a full game or help with one hard part of it, I work directly with you from planning to release.</p>
           </div>
         </div>
-
-        <!-- ── Project Card 2 -->
-        <div class="project-card">
-          <div class="project-card-top">
-            <span class="project-type">PC Game</span>
-            <span class="project-year">2025</span>
+        <div class="services">
+          <div class="service">
+            <h3>Multiplayer games</h3>
+            <p>Real-time online games with lobbies, matchmaking and synced gameplay that holds up with real players.</p>
+            <ul class="chips"><li>Photon Fusion</li><li>Photon PUN</li><li>Socket.IO</li><li>Mirror</li></ul>
           </div>
-          <h3 class="project-title">The Fourth Impossible</h3>
-          <p class="project-desc">
-           IT is a single player game based on the book. IT uses the Old Style fighting system and scalable uestsystem 
-           and the cutscene system . The game is highlt optimzed and is a medimum scale project.
-          </p>
-          <div class="project-tags">
-            <span class="tag sm">Unity3d</span>
-            <span class="tag sm">C#</span>
+          <div class="service">
+            <h3>Mobile games</h3>
+            <p>Android and iOS games built to perform well and earn, with ads, in-app purchases and store release.</p>
+            <ul class="chips"><li>AdMob</li><li>Unity Ads</li><li>In-app purchases</li><li>Play Store</li></ul>
           </div>
-          <div class="project-links">
-            <a href="#" class="proj-link" target="_blank">GitHub ↗</a>
-            <a href="#" class="proj-link live" target="_blank">Play Store ↗</a>
+          <div class="service">
+            <h3>Game backends</h3>
+            <p>Servers, APIs and databases for accounts, leaderboards, lobbies and live game data.</p>
+            <ul class="chips"><li>NestJS</li><li>Firebase</li><li>PlayFab</li><li>MongoDB</li><li>SQL</li></ul>
           </div>
-        </div>
-
-        <!-- ── Project Card 3 -->
-        <div class="project-card">
-          <div class="project-card-top">
-            <span class="project-type">Multiplayer Mobile Game</span>
-            <span class="project-year">2024</span>
-          </div>
-          <h3 class="project-title">Hide and Seek</h3>
-          <p class="project-desc">
-           IT is a multiplayer mobile game based on the hide and seek game. IT is fun game and the user playa as hider and seeker in this game.
-           The hider can hide in the environment and the seeker can search for the hider. The seeker can use the camera to search for the hider.
-          </p>
-          <div class="project-tags">
-            <span class="tag sm">Unity3dd</span>
-            <span class="tag sm">C#</span>
-            <span class="tag sm">Photon Fusion</span>
-          </div>
-          <div class="project-links">
-            <a href="#" class="proj-link" target="_blank">GitHub ↗</a>
+          <div class="service">
+            <h3>Fixes and optimization</h3>
+            <p>Bug and crash fixing, performance tuning and code cleanup for projects that are stuck or slow.</p>
+            <ul class="chips"><li>Profiling</li><li>Crash fixes</li><li>Code review</li><li>Refactoring</li></ul>
           </div>
         </div>
-
-        <!-- ── Project Card 4 -->
-        <div class="project-card">
-          <div class="project-card-top">
-            <span class="project-type">Multiplayer Mobile Game</span>
-            <span class="project-year">2026</span>
-          </div>
-          <h3 class="project-title">Buraco Plus</h3>
-          <p class="project-desc">
-            A Brazilian Buraco multiplayer card game with Classic and Professional rules,
-            melds, and scoring. Includes lobby matchmaking over Socket.IO and REST, with
-            Photon Fusion–synced in-match gameplay backed by a NestJS server.
-          </p>
-          <div class="project-tags">
-            <span class="tag sm">Unity</span>
-            <span class="tag sm">C#</span>
-            <span class="tag sm">Photon Fusion</span>
-            <span class="tag sm">Socket.IO</span>
-            <span class="tag sm">NestJS</span>
-          </div>
-          <div class="project-links">
-            <a href="#" class="proj-link" target="_blank">GitHub ↗</a>
-            <a href="#" class="proj-link live" target="_blank">Play Store ↗</a>
-          </div>
-        </div>
-
-        <!-- ── Project Card 5 -->
-        <div class="project-card">
-          <div class="project-card-top">
-            <span class="project-type">Mobile Endless Runner</span>
-            <span class="project-year">2026</span>
-          </div>
-          <h3 class="project-title">Misadventures of Samson</h3>
-          <p class="project-desc">
-            A 3D mobile endless runner for Android and iOS, built in Unity 6 (URP)
-            on the Trash Dash foundation with custom missions, outfits, chase gameplay,
-            and store/IAP.
-          </p>
-          <div class="project-tags">
-            <span class="tag sm">Unity</span>
-            <span class="tag sm">C#</span>
-            <span class="tag sm">URP</span>
-            <span class="tag sm">Mobile</span>
-          </div>
-          <div class="project-links">
-            <a href="#" class="proj-link" target="_blank">GitHub ↗</a>
-            <a href="#" class="proj-link live" target="_blank">Play Store ↗</a>
-          </div>
-        </div>
-
-        <!-- ── Project Card 6 -->
-        <div class="project-card">
-          <div class="project-card-top">
-            <span class="project-type">Mobile Merge Tower Defense</span>
-            <span class="project-year">2026</span>
-          </div>
-          <h3 class="project-title">Competitive Survival Merge Defense</h3>
-          <p class="project-desc">
-            An Android merge tower-defense survival game in Unity 6 (URP 2D):
-            6-unit deck, summon/merge combat, wave and boss survival, plus
-            pre-match global active abilities.
-          </p>
-          <div class="project-tags">
-            <span class="tag sm">Unity</span>
-            <span class="tag sm">C#</span>
-            <span class="tag sm">URP</span>
-            <span class="tag sm">Mobile</span>
-          </div>
-          <div class="project-links">
-            <a href="#" class="proj-link" target="_blank">GitHub ↗</a>
-            <a href="#" class="proj-link live" target="_blank">Play Store ↗</a>
-          </div>
-        </div>
-
-        <!-- ── Project Card 7 -->
-        <div class="project-card">
-          <div class="project-card-top">
-            <span class="project-type">Portfolio Showreel</span>
-            <span class="project-year">2026</span>
-          </div>
-          <h3 class="project-title">Game Development Showreel</h3>
-          <p class="project-desc">
-            A short look at games I’ve built and led — multiplayer systems, mobile runners,
-            merge tower defense, card games, and PC adventure work. Highlights gameplay
-            systems, polish, and production scope across Unity projects.
-          </p>
-          <div class="project-tags">
-            <span class="tag sm">Unity</span>
-            <span class="tag sm">Gameplay</span>
-            <span class="tag sm">Multiplayer</span>
-            <span class="tag sm">Mobile</span>
-          </div>
-          <div class="project-links">
-            <a href="https://www.youtube.com/watch?v=8tkrPeMQgKI" class="proj-link live" target="_blank">Watch on YouTube ↗</a>
-          </div>
-        </div>
-
-        <!-- ── ADD MORE: Copy a project-card block above to add more projects -->
-
       </div>
     </section>
 
-    <!-- ══ EXPERIENCE TAB ════════════════════════════════════ -->
-    <section id="experience" class="tab-section">
-
-      <div class="section-header">
-        <h2>Experience</h2>
-        <p class="section-sub">My professional journey so far.</p>
-      </div>
-
-      <div class="timeline">
-
-        <!-- ── Timeline Item 1 (most recent) -->
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <div>
-                <h3 class="timeline-role">Senior Unity Game Developer</h3>
-                <span class="timeline-company">Inventix Games</span>
-              </div>
-              <span class="timeline-date">2026 — Present</span>
-            </div>
-            <ul class="timeline-bullets">
-              <li>Developing multiplayer gameplay systems in Unity for production titles</li>
-              <li>Building networked features, match flow, and core gameplay loops</li>
-              <li>Collaborating with design and engineering on scalable Unity architecture</li>
-            </ul>
-            <div class="timeline-tags">
-              <span class="tag sm">Unity</span>
-              <span class="tag sm">C#</span>
-              <span class="tag sm">Photon Fusion</span>
-              <span class="tag sm">Multiplayer</span>
-            </div>
+    <section class="section" id="work">
+      <div class="wrap">
+        <div class="section__head">
+          <div>
+            <h2>Selected work</h2>
+            <p class="section__intro">Client and studio projects from the last few years. Source code for client work stays private, so each project links to a case study on GitHub.</p>
           </div>
+          <a class="btn btn--line" href="https://github.com/Taimoor-Riaz" target="_blank" rel="noopener">All projects on GitHub</a>
         </div>
 
-        <!-- ── Timeline Item 2 -->
-        <!-- UPDATE: All fields -->
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <div>
-                <h3 class="timeline-role">Chief Technical Officer</h3>
-                <span class="timeline-company">Cipher Coders</span>
-              </div>
-              <span class="timeline-date">Jan 2023 — Present</span>
+        <div class="projects">
+          <article class="project project--wide">
+            <div class="art art--cards" aria-hidden="true"><span>BP</span></div>
+            <div class="project__body">
+              <div class="project__meta"><span class="badge">Client project</span><span>Multiplayer card game</span><span>2026</span></div>
+              <h3>Buraco Plus</h3>
+              <p>An online version of Buraco, the Brazilian card game, with Classic and Professional rules, melds and scoring. Players find tables through lobby matchmaking, and every move is synced live across the table.</p>
+              <ul class="chips"><li>Unity</li><li>C#</li><li>Photon Fusion</li><li>Socket.IO</li><li>NestJS</li></ul>
+              <div class="project__links"><a class="btn btn--gold btn--small" href="https://github.com/Taimoor-Riaz/Buraco-Plus-Showcase" target="_blank" rel="noopener">Read the case study</a></div>
             </div>
-            <ul class="timeline-bullets">
-              <!-- UPDATE: Your real responsibilities / achievements -->
-              <li>Actively leading technical operations and innovation strategy</li>
-              <li>Boosted technological goals increasing company valuation by 20%</li>
-              <li>Supervised implementation of new graphical game designs in the company's
-                flagship titles</li>
-              <li>Leading the core management and technical team of Cipher Coders</li>
-              <li>Developed and shipped PC Game The Fourth Impossible as a Technical Lead</li>
-            </ul>
-            <div class="timeline-tags">
-              <span class="tag sm">Unity</span>
-              <span class="tag sm">Technical Lead</span>
-              <span class="tag sm">Game Development</span>
+          </article>
+
+          <article class="project">
+            <div class="art art--kiosk" aria-hidden="true"><span>AI</span></div>
+            <div class="project__body">
+              <div class="project__meta"><span class="badge">Client project</span><span>AI kiosk app</span><span>2026</span></div>
+              <h3>Elm Kiosk</h3>
+              <p>Visitors ask a 3D character a question, an LLM on the server writes the answer, and the character speaks it back with real-time lip sync.</p>
+              <ul class="chips"><li>Unity</li><li>WebSockets</li><li>LLM</li><li>SALSA LipSync</li></ul>
+              <div class="project__links"><a class="btn btn--gold btn--small" href="https://github.com/Taimoor-Riaz/Elm-AI-Kiosk-Showcase" target="_blank" rel="noopener">Read the case study</a></div>
             </div>
-          </div>
+          </article>
+
+          <article class="project">
+            <div class="art art--defense" aria-hidden="true"><span>MD</span></div>
+            <div class="project__body">
+              <div class="project__meta"><span class="badge">Client project</span><span>Android tower defense</span><span>2026</span></div>
+              <h3>Competitive Survival Merge Defense</h3>
+              <p>Build a deck of six units, summon and merge them into stronger ones, and survive escalating waves and boss fights with pre-match abilities.</p>
+              <ul class="chips"><li>Unity 6</li><li>URP 2D</li><li>C#</li><li>Android</li></ul>
+              <div class="project__links"><a class="btn btn--gold btn--small" href="https://github.com/Taimoor-Riaz/Merge-Defense-Showcase" target="_blank" rel="noopener">Read the case study</a></div>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="art art--runner" aria-hidden="true"><span>MS</span></div>
+            <div class="project__body">
+              <div class="project__meta"><span class="badge">Client project</span><span>Endless runner</span><span>2026</span></div>
+              <h3>Misadventures of Samson</h3>
+              <p>A 3D endless runner for Android and iOS with chase gameplay, missions, unlockable outfits and an in-game store with in-app purchases.</p>
+              <ul class="chips"><li>Unity 6</li><li>URP</li><li>Unity IAP</li><li>iOS and Android</li></ul>
+              <div class="project__links"><a class="btn btn--gold btn--small" href="https://github.com/Taimoor-Riaz/Misadventures-of-Samson-Showcase" target="_blank" rel="noopener">Read the case study</a></div>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="art art--pc" aria-hidden="true"><span>4I</span></div>
+            <div class="project__body">
+              <div class="project__meta"><span class="badge">Technical lead</span><span>PC game</span><span>2025</span></div>
+              <h3>The Fourth Impossible</h3>
+              <p>A single-player PC game adapted from a book, with classic melee combat, a quest system designers can extend, and in-engine cutscenes. I led the technical side through to release.</p>
+              <ul class="chips"><li>Unity</li><li>C#</li><li>Timeline</li><li>PC</li></ul>
+              <div class="project__links"><a class="btn btn--gold btn--small" href="https://github.com/Taimoor-Riaz/The-Fourth-Impossible-Showcase" target="_blank" rel="noopener">Read the case study</a></div>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="art art--hide" aria-hidden="true"><span>HS</span></div>
+            <div class="project__body">
+              <div class="project__meta"><span>Multiplayer mobile game</span><span>2024</span></div>
+              <h3>Hide and Seek</h3>
+              <p>An online take on the classic game. Hiders blend into the level while seekers hunt them down before the timer runs out, with roles switching every round.</p>
+              <ul class="chips"><li>Unity</li><li>Photon Fusion</li><li>C#</li><li>Mobile</li></ul>
+              <div class="project__links"><a class="btn btn--gold btn--small" href="https://github.com/Taimoor-Riaz/Hide-and-Seek-Multiplayer-Showcase" target="_blank" rel="noopener">Read the case study</a></div>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="art art--pizza" aria-hidden="true"><span>PR</span></div>
+            <div class="project__body">
+              <div class="project__meta"><span class="badge">50K+ downloads</span><span>Cooking game</span><span>Google Play</span></div>
+              <h3>Pizzarush</h3>
+              <p>A casual pizza-making game where players knead, top and bake pizzas to fill customer orders against the clock. Published on Google Play by Cipher Solutions.</p>
+              <ul class="chips"><li>Unity</li><li>C#</li><li>AdMob</li><li>Android</li></ul>
+              <div class="project__links"><a class="btn btn--gold btn--small" href="https://play.google.com/store/apps/details?id=com.solutions.pizzrushpizzagame" target="_blank" rel="noopener">Get it on Google Play</a></div>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="art art--bolts" aria-hidden="true"><span>NB</span></div>
+            <div class="project__body">
+              <div class="project__meta"><span>Puzzle game</span><span>Google Play</span></div>
+              <h3>Nuts and Bolts: Puzzle Screw</h3>
+              <p>A wooden screw puzzle where players unscrew nuts and bolts in the right order to free every plank, with hand-built levels that get steadily harder.</p>
+              <ul class="chips"><li>Unity 2D</li><li>C#</li><li>Physics</li><li>Android</li></ul>
+              <div class="project__links"><a class="btn btn--gold btn--small" href="https://play.google.com/store/apps/details?id=com.nuts.bolts.Screw.puzzle.cs" target="_blank" rel="noopener">Get it on Google Play</a></div>
+            </div>
+          </article>
         </div>
 
-        <!-- ── Timeline Item 2 -->
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <div>
-                <h3 class="timeline-role">Senior Game Developer</h3>
-                <span class="timeline-company">Cipher Coders</span>
-              </div>
-              <span class="timeline-date">Jan 2021 — Present</span>
-            </div>
-            <ul class="timeline-bullets">
-              <!-- UPDATE -->
-              <li>Developing hyper-casual games in Unity Engine and live testing and coding</li>
-              <li>Published more than 20+ games</li>
-              <li>Created multiple games including action, adventure, family, and strategy genres</li>
-              <li>Building 3D platforms in the game environment using Unity3D and C# programming language</li>
-              <li>Developing 2D platforms in the game environment using Unity3D and C# programming language</li>
-              <li>Managing a team of junior developers, mentoring them to enhance their coding
-                skills</li>
-
-            </ul>
-            <div class="timeline-tags">
-              <span class="tag sm">Unity</span>
-              <span class="tag sm">Firebase</span>
-              <span class="tag sm">C#</span>
-              <span class="tag sm">Game Development</span>
-              <span class="tag sm">Team Lead</span>
-              <span class="tag sm">Photon</span>
-              <span class="tag sm">Fusion</span>
-            </div>
-          </div>
+        <div class="more">
+          <h3>Open-source Unity tools</h3>
+          <ul class="tools">
+            <li><a href="https://github.com/Taimoor-Riaz/Unity-Admob-Ads" target="_blank" rel="noopener"><span class="tools__name">Unity AdMob Ads</span><span class="tools__desc">Drop-in ads manager with a custom editor for multiple ad unit IDs.</span><span class="tools__go">View on GitHub</span></a></li>
+            <li><a href="https://github.com/Taimoor-Riaz/GroundFitting" target="_blank" rel="noopener"><span class="tools__name">Ground Fitting</span><span class="tools__desc">Aligns animals and characters to slopes, cliffs and uneven terrain.</span><span class="tools__go">View on GitHub</span></a></li>
+            <li><a href="https://github.com/Taimoor-Riaz/UnityGameTemplate" target="_blank" rel="noopener"><span class="tools__name">Unity Game Template</span><span class="tools__desc">A ready project structure for starting new Unity games quickly.</span><span class="tools__go">View on GitHub</span></a></li>
+            <li><a href="https://github.com/Taimoor-Riaz/Singleton-Pattern" target="_blank" rel="noopener"><span class="tools__name">Singleton Pattern</span><span class="tools__desc">Reusable generic singleton base class for managers in Unity.</span><span class="tools__go">View on GitHub</span></a></li>
+            <li><a href="https://github.com/Taimoor-Riaz/Pick-Drop-Observer-Pattern" target="_blank" rel="noopener"><span class="tools__name">Pick and Drop</span><span class="tools__desc">Pick-up and drop mechanic built on the Observer pattern.</span><span class="tools__go">View on GitHub</span></a></li>
+          </ul>
         </div>
-
-        <!-- ── Timeline Item 3 -->
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <div>
-                <h3 class="timeline-role">Game Developer</h3>
-                <span class="timeline-company">Freelance/Fiverr</span>
-              </div>
-              <span class="timeline-date">Jan 2020 — 2023</span>
-            </div>
-            <ul class="timeline-bullets">
-              <li>Worked for multiple clients on Fiverr</li>
-              <li>Developed multiple games including action, adventure, family, and strategy genres</li>
-              <li>Reached Level 2 seller on Fiverr</li>
-              <li>Created multiplayer games using Photon Fusion and Unity Engine</li>
-              <li>Worked with renowned clients across the globe including USA, UK, Canada, Australia, and more</li>
-            </ul>
-            <div class="timeline-tags">
-              <span class="tag sm">Unity</span>
-              <span class="tag sm">C#</span>
-              <span class="tag sm">Game Development</span>
-              <span class="tag sm">Photon</span>
-              <span class="tag sm">Fusion</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- ── Timeline Item 4 (education / older) -->
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <div>
-                <!-- UPDATE: Degree / course name -->
-                <h3 class="timeline-role">BS Computer Science</h3>
-                <!-- UPDATE: University name -->
-                <span class="timeline-company">Your University</span>
-              </div>
-              <span class="timeline-date">2017 — 2021</span>
-            </div>
-            <ul class="timeline-bullets">
-              <li>Focused on software engineering, data structures, and systems programming.</li>
-              <li>Final year project: Multiplayer strategy game with custom server-side logic.</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- ── ADD MORE: Copy a timeline-item block above for more experience -->
-
       </div>
     </section>
 
+    <section class="section" id="skills">
+      <div class="wrap">
+        <div class="section__head"><div><h2>Skills and tools</h2><p class="section__intro">The technology I use day to day across game, network and server code.</p></div></div>
+        <div class="skills">
+          <div><h3>Game development</h3><ul class="chips"><li>Unity 2D and 3D</li><li>C# and .NET</li><li>URP</li><li>Shaders and HLSL</li><li>Unity UI</li><li>Timeline and cutscenes</li><li>Game AI</li></ul></div>
+          <div><h3>Multiplayer and networking</h3><ul class="chips"><li>Photon Fusion</li><li>Photon PUN</li><li>Mirror and Netcode</li><li>Socket.IO</li><li>WebSockets</li></ul></div>
+          <div><h3>Backend and data</h3><ul class="chips"><li>NestJS</li><li>REST APIs</li><li>Firebase</li><li>PlayFab</li><li>MongoDB</li><li>MySQL and PostgreSQL</li></ul></div>
+          <div><h3>Mobile and tools</h3><ul class="chips"><li>AdMob and Unity Ads</li><li>In-app purchases</li><li>Android and iOS builds</li><li>Git</li><li>Blender</li><li>Autodesk Maya</li></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="wrap">
+        <div class="section__head"><div><h2>Experience</h2><p class="section__intro">Making games professionally since 2019, after starting out in 3D art and level design in 2016.</p></div></div>
+        <ol class="timeline">
+          <li class="job job--now">
+            <div class="job__when">Jul 2026 to now<br />Remote</div>
+            <div>
+              <h3>Senior Game Developer</h3>
+              <p class="job__org">Inventix Games, Riyadh</p>
+              <ul>
+                <li>Build gameplay and multiplayer systems in Unity for production titles.</li>
+                <li>Plan game architecture, review code and guide the development team.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="job job--now">
+            <div class="job__when">Jan 2022 to now<br />Gujrat, Pakistan</div>
+            <div>
+              <h3>Chief Technology Officer</h3>
+              <p class="job__org">Cipher Coders, Senior Unity Developer before becoming CTO in 2023</p>
+              <ul>
+                <li>Lead the technical team and the studio's game development from pitch to launch.</li>
+                <li>Led and shipped the PC game The Fourth Impossible as technical lead.</li>
+                <li>Published more than 20 games across action, adventure, family and strategy genres.</li>
+                <li>Mentor junior developers, assign work and run code reviews.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="job">
+            <div class="job__when">Sep 2019 to Jun 2024</div>
+            <div>
+              <h3>Freelance Unity Developer</h3>
+              <p class="job__org">Fiverr, Level 2 seller</p>
+              <ul>
+                <li>Delivered games and multiplayer projects for clients in the USA, UK, Canada and Australia.</li>
+                <li>Built with Photon Fusion and Unity across action, adventure, family and strategy games.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="job">
+            <div class="job__when">May 2024 to Aug 2024</div>
+            <div>
+              <h3>Game Development Teacher</h3>
+              <p class="job__org">TEVTA Punjab</p>
+              <ul><li>Taught Unity and C# game development to students starting careers in the industry.</li></ul>
+            </div>
+          </li>
+          <li class="job">
+            <div class="job__when">Dec 2020 to Dec 2021</div>
+            <div>
+              <h3>Game Developer</h3>
+              <p class="job__org">Nerds Studio</p>
+              <ul><li>Built gameplay features, integrated art and prototyped new game ideas across platforms.</li></ul>
+            </div>
+          </li>
+          <li class="job">
+            <div class="job__when">Jan 2019 to Nov 2020</div>
+            <div>
+              <h3>Game Developer</h3>
+              <p class="job__org">Phoenix Digitals</p>
+              <ul><li>Built client games with multiplayer, enemy AI and custom controls and UI.</li></ul>
+            </div>
+          </li>
+          <li class="job">
+            <div class="job__when">Feb 2016 to Jun 2018</div>
+            <div>
+              <h3>3D Artist and Level Designer</h3>
+              <p class="job__org">GameByteStudio, The Knights and Allied Consultant</p>
+              <ul><li>Created 3D models, environments and game levels, the foundation for my work as a developer.</li></ul>
+            </div>
+          </li>
+        </ol>
+        <div class="edu">
+          <div>
+            <h3>BS Computer Science</h3>
+            <p>University of Central Punjab. Final year project: a multiplayer strategy game with custom server-side logic.</p>
+          </div>
+          <p>2017 to 2021</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="wrap">
+        <h2>Let's build your game</h2>
+        <p>Tell me what you're making, your timeline and your budget. I usually reply within a day.</p>
+        <a class="contact__mail" href="mailto:mughaltaimoor298@gmail.com?subject=Game%20project%20enquiry">mughaltaimoor298@gmail.com</a>
+        <div class="socials">
+          <a class="btn btn--line" href="https://www.linkedin.com/in/taimoor-riaz-04068599/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn btn--line" href="https://github.com/Taimoor-Riaz" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn btn--line" href="https://www.youtube.com/@TaimoorDeveloper" target="_blank" rel="noopener">YouTube</a>
+          <a class="btn btn--line" href="https://taimoorriaz.itch.io/" target="_blank" rel="noopener">itch.io</a>
+          <a class="btn btn--line" href="Taimoor%20Resume_Europass.pdf" download>Download CV</a>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <!-- ── CONTACT FOOTER ────────────────────────────────────── -->
-  <footer id="contact" class="contact-footer">
-    <div class="contact-inner">
-      <h2>Let's work together.</h2>
-      <!-- UPDATE: Your email -->
-      <a href="mailto:your@email.com" class="contact-email">mughaltaimoor298@gmail.com</a>
-      <div class="contact-links">
-        <!-- UPDATE: Replace # with real URLs. Remove any you don't use. -->
-        <a href="https://github.com/Taimoor-Riaz" target="_blank" class="contact-icon-link" title="GitHub">
-          <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
-        </a>
-        <a href="https://www.linkedin.com/in/taimoor-riaz-04068599/" target="_blank" class="contact-icon-link" title="LinkedIn">
-          <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-        </a>
-        <a href="https://itch.io/profile/taimoorriaz" target="_blank" class="contact-icon-link" title="itch.io">
-          <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M3.13 1.338C2.08 1.96.02 4.328 0 4.95v1.03c0 1.303 1.22 2.45 2.325 2.45 1.326 0 2.436-1.102 2.436-2.41 0 1.308 1.07 2.41 2.396 2.41 1.325 0 2.354-1.102 2.354-2.41 0 1.308 1.113 2.41 2.44 2.41h.024c1.327 0 2.44-1.102 2.44-2.41 0 1.308 1.028 2.41 2.353 2.41 1.326 0 2.396-1.102 2.396-2.41 0 1.308 1.11 2.41 2.435 2.41C23.78 8.43 25 7.283 25 5.98V4.95c-.02-.622-2.082-2.99-3.13-3.612C21.87 1.338 3.13 1.338 3.13 1.338zM8.5 9.5v11h7V9.5H8.5z"/></svg>
-        </a>
-        <a href="https://www.youtube.com/@TaimoorDeveloper" target="_blank" class="contact-icon-link" title="YouTube">
-          <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22" aria-hidden="true">
-            <path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.6 3.6 12 3.6 12 3.6s-7.6 0-9.4.5A3 3 0 0 0 .5 6.2 31.7 31.7 0 0 0 0 12a31.7 31.7 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.8.5 9.4.5 9.4.5s7.6 0 9.4-.5a3 3 0 0 0 2.1-2.1A31.7 31.7 0 0 0 24 12a31.7 31.7 0 0 0-.5-5.8zM9.6 15.6V8.4L15.8 12l-6.2 3.6z"/>
-          </svg>
-        </a>
-      </div>
-      <p class="footer-copy">
-        <!-- UPDATE: Your name -->
-        © 2026 Taimoor Riaz. Built with HTML, CSS &amp; JS.
-      </p>
+  <footer class="footer">
+    <div class="wrap">
+      <span>&copy; <span id="year">2026</span> Taimoor Riaz</span>
+      <span>Senior Unity Game Developer, Pakistan. Working with clients worldwide.</span>
     </div>
   </footer>
 
