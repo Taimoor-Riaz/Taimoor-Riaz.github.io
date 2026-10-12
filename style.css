@@ -129,6 +129,7 @@ a { color: inherit; }
     repeating-linear-gradient(135deg, rgba(255,255,255,0.06) 0 2px, transparent 2px 16px);
 }
 .art span { font-family: var(--display); font-weight: 800; font-size: clamp(3rem, 8vw, 5.5rem); color: rgba(255,255,255,0.92); letter-spacing: -0.04em; text-shadow: 0 6px 0 rgba(0,0,0,0.18); }
+.art--baseball { --c1: #24508a; --c2: #f4f1ea; }
 .art--cards { --c1: #0f6b4f; --c2: #d9463b; }
 .art--kiosk { --c1: #3b2d8f; --c2: #4fd1ff; }
 .art--defense { --c1: #7a2e1f; --c2: #ffc53d; }
