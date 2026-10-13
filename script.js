@@ -32,6 +32,37 @@
     });
   }
 
+  // Project category filters
+  var filters = document.querySelectorAll('.filter');
+  var grid = document.querySelector('.projects');
+  if (filters.length && grid) {
+    var cards = grid.querySelectorAll('.project');
+    filters.forEach(function (btn) {
+      var f = btn.getAttribute('data-filter');
+      var count = 0;
+      cards.forEach(function (card) {
+        var cats = (card.getAttribute('data-cat') || '').split(' ');
+        if (f === 'all' || cats.indexOf(f) > -1) count++;
+      });
+      var badge = document.createElement('span');
+      badge.textContent = count;
+      btn.appendChild(badge);
+      btn.addEventListener('click', function () {
+        filters.forEach(function (b) {
+          b.classList.remove('is-active');
+          b.setAttribute('aria-pressed', 'false');
+        });
+        btn.classList.add('is-active');
+        btn.setAttribute('aria-pressed', 'true');
+        cards.forEach(function (card) {
+          var cats = (card.getAttribute('data-cat') || '').split(' ');
+          card.hidden = !(f === 'all' || cats.indexOf(f) > -1);
+        });
+        grid.classList.toggle('is-filtered', f !== 'all');
+      });
+    });
+  }
+
   // Footer year
   var year = document.getElementById('year');
   if (year) year.textContent = new Date().getFullYear();
