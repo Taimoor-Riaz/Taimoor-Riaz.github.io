@@ -114,8 +114,19 @@
           <a class="btn btn--line" href="https://github.com/Taimoor-Riaz" target="_blank" rel="noopener">All projects on GitHub</a>
         </div>
 
+        <div class="filters" role="group" aria-label="Filter projects by category">
+          <button class="filter is-active" type="button" data-filter="all" aria-pressed="true">All projects</button>
+          <button class="filter" type="button" data-filter="multi" aria-pressed="false">Multiplayer</button>
+          <button class="filter" type="button" data-filter="single" aria-pressed="false">Single player</button>
+          <button class="filter" type="button" data-filter="mobile" aria-pressed="false">Mobile</button>
+          <button class="filter" type="button" data-filter="pc" aria-pressed="false">PC</button>
+          <button class="filter" type="button" data-filter="web" aria-pressed="false">Browser games</button>
+          <button class="filter" type="button" data-filter="ai" aria-pressed="false">AI</button>
+          <button class="filter" type="button" data-filter="backend" aria-pressed="false">Backend</button>
+        </div>
+
         <div class="projects">
-          <article class="project project--wide">
+          <article class="project project--wide" data-cat="single">
             <div class="art art--baseball" aria-hidden="true"><span>3D</span></div>
             <div class="project__body">
               <div class="project__meta"><span class="badge">Client project</span><span>3D baseball game</span><span>In development</span></div>
@@ -126,7 +137,7 @@
             </div>
           </article>
 
-          <article class="project project--wide">
+          <article class="project project--wide" data-cat="multi mobile backend">
             <div class="art art--cards" aria-hidden="true"><span>BP</span></div>
             <div class="project__body">
               <div class="project__meta"><span class="badge">Client project</span><span>Multiplayer card game</span><span>2026</span></div>
@@ -137,7 +148,7 @@
             </div>
           </article>
 
-          <article class="project">
+          <article class="project" data-cat="ai backend">
             <div class="art art--kiosk" aria-hidden="true"><span>AI</span></div>
             <div class="project__body">
               <div class="project__meta"><span class="badge">Client project</span><span>AI kiosk app</span><span>2026</span></div>
@@ -148,7 +159,7 @@
             </div>
           </article>
 
-          <article class="project">
+          <article class="project" data-cat="single mobile">
             <div class="art art--defense" aria-hidden="true"><span>MD</span></div>
             <div class="project__body">
               <div class="project__meta"><span class="badge">Client project</span><span>Android tower defense</span><span>2026</span></div>
@@ -159,7 +170,7 @@
             </div>
           </article>
 
-          <article class="project">
+          <article class="project" data-cat="single mobile">
             <div class="art art--runner" aria-hidden="true"><span>MS</span></div>
             <div class="project__body">
               <div class="project__meta"><span class="badge">Client project</span><span>Endless runner</span><span>2026</span></div>
@@ -170,7 +181,7 @@
             </div>
           </article>
 
-          <article class="project">
+          <article class="project" data-cat="single pc">
             <div class="art art--pc" aria-hidden="true"><span>4I</span></div>
             <div class="project__body">
               <div class="project__meta"><span class="badge">Technical lead</span><span>PC game</span><span>2025</span></div>
@@ -181,7 +192,7 @@
             </div>
           </article>
 
-          <article class="project">
+          <article class="project" data-cat="multi mobile">
             <div class="art art--hide" aria-hidden="true"><span>HS</span></div>
             <div class="project__body">
               <div class="project__meta"><span>Multiplayer mobile game</span><span>2024</span></div>
@@ -192,7 +203,7 @@
             </div>
           </article>
 
-          <article class="project">
+          <article class="project" data-cat="single mobile">
             <div class="art art--pizza" aria-hidden="true"><span>PR</span></div>
             <div class="project__body">
               <div class="project__meta"><span class="badge">50K+ downloads</span><span>Cooking game</span><span>Google Play</span></div>
@@ -203,7 +214,7 @@
             </div>
           </article>
 
-          <article class="project project--wide">
+          <article class="project project--wide" data-cat="single mobile">
             <div class="art art--bolts" aria-hidden="true"><span>NB</span></div>
             <div class="project__body">
               <div class="project__meta"><span>Puzzle game</span><span>Google Play</span></div>
@@ -214,7 +225,7 @@
             </div>
           </article>
 
-          <article class="project">
+          <article class="project" data-cat="single web">
             <div class="art art--img"><img src="https://img.itch.zone/aW1nLzI1OTU5NTM4LnBuZw==/original/wEDvx6.png" alt="Recoil Rush gameplay" loading="lazy" /></div>
             <div class="project__body">
               <div class="project__meta"><span class="badge">Play in browser</span><span>2D physics shooter</span><span>2026</span></div>
@@ -225,14 +236,14 @@
             </div>
           </article>
 
-          <article class="project">
+          <article class="project" data-cat="single web">
             <div class="art art--img"><img src="https://img.itch.zone/aW1nLzI1OTM5NjIyLnBuZw==/original/xZtNVf.png" alt="Never Trust Rules gameplay" loading="lazy" /></div>
             <div class="project__body">
               <div class="project__meta"><span class="badge">Play in browser</span><span>2D psychological puzzle</span><span>2026</span></div>
               <h3>Never Trust Rules</h3>
               <p>A mind-bending 2D game where every instruction could be a trap. The rules on screen may be reversed, misleading or completely false, so players have to question everything to survive.</p>
               <ul class="chips"><li>Unity</li><li>C#</li><li>Puzzle design</li><li>WebGL</li></ul>
-              <div class="project__links"><a class="btn btn--gold btn--small" href="https://taimoorriaz.itch.io/never-trust-rules" target="_blank" rel="noopener">Play on itch.io</a></div>
+              <div class="project__links"><a class="btn btn--gold btn--small" href="https://taimoorriaz.itch.io/never-trust-rules" target="_blank" rel="noopener">Play on itch.io</a><a class="btn btn--line btn--small" href="https://github.com/Taimoor-Riaz/ReversedRole_Done" target="_blank" rel="noopener">View code on GitHub</a></div>
             </div>
           </article>
         </div>
