@@ -163,6 +163,7 @@ a { color: inherit; }
 .art--hide { --c1: #22614a; --c2: #f2e35b; }
 .art--pizza { --c1: #b8401f; --c2: #ffd166; }
 .art--bolts { --c1: #6b4a2b; --c2: #c9d1d9; }
+.art--nyx { --c1: #10233f; --c2: #39e6c3; }
 .project__body { padding: 26px 28px 28px; display: flex; flex-direction: column; flex: 1; }
 .project__meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; font-size: 0.85rem; color: var(--muted); }
 .project__meta span + span::before { content: "/"; margin-right: 8px; color: var(--line); }
